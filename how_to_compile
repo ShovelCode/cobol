@@ -1,0 +1,6 @@
+(Debian/Ubuntu Linux systems)
+Compiling a file hello.cbl into an executable named hello
+
+cobc -free hello.cbl -x -o hello
+
+run like a compiled C program with ./hello
