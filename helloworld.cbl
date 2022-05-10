@@ -5,3 +5,5 @@ data division.
 procedure division.
   display "hello world".
       
+program-done.
+      stop run.
