@@ -1,0 +1,22 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. ARRAY.
+       AUTHOR. CHRIS R.
+       INSTALLATION. COBOLPRO.
+       DATE-WRITTEN. 12-03-2019.
+       DATE-COMPILED. 12-03-2019.
+       SECURITY. PUBLIC.
+       REMARKS. This program demonstrates the use of arrays in COBOL.
+
+       ENVIRONMENT DIVISION.
+         INPUT-OUTPUT SECTION.
+         FILE-CONTROL.
+       DATA DIVISION.
+         FILE SECTION.
+         WORKING-STORAGE SECTION.
+	       01 ARR.
+            05 A PIC 9(1) VALUE ZERO OCCURS 10 TIMES INDEXED BY I.
+       PROCEDURE DIVISION.
+         DISPLAY A(1).
+         SET A(2) TO 5.
+         DISPLAY A(2).
+       STOP RUN.
