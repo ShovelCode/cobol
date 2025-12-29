@@ -1,0 +1,22 @@
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. FileRead.
+
+       ENVIRONMENT DIVISION.
+        INPUT-OUTPUT SECTION.
+        FILE-CONTROL.
+        SELECT EMPLOYEE ASSIGN TO 'input.txt'
+        ORGANIZATION IS LINE SEQUENTIAL.            
+
+       DATA DIVISION.
+       FILE SECTION.
+        FD EMPLOYEE.
+         01 EMPLOYEE-FILE.
+          05 EMPLOYEE-ID PIC 9(5).
+          05 NAME PIC A(25).
+
+       WORKING-STORAGE SECTION.
+        01 WS-EMPLOYEE.
+         05 WS-EMPLOYEE-ID PIC 9(5).
+         05 WS-NAME PIC A(25).
+        01 WS-EOF PIC A(1). 
+
